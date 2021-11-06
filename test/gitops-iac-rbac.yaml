@@ -13,8 +13,7 @@ rules:
     verbs:
       - get
       - list
-      - post
-      - patch
+      - create
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding

@@ -9,6 +9,7 @@ rules:
     resources:
       - customresourcedefinitions
       - machineconfigpools
+      - machineconfig
     verbs:
       - get
       - list

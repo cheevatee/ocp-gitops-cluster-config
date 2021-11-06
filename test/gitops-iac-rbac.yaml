@@ -1,0 +1,29 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: gitops-iac-role
+rules:
+  - apiGroups:
+      - apiextensions.k8s.io
+      - machineconfiguration.openshift.io
+    resources:
+      - customresourcedefinitions
+      - machineconfigpools
+    verbs:
+      - get
+      - list
+      - post
+      - patch
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: gitops-iac-rolebinding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: gitops-iac-role
+subjects:
+  - kind: ServiceAccount
+    name: openshift-gitops-argocd-application-controller
+    namespace: openshift-gitops

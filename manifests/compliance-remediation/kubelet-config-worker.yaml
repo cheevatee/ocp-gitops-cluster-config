@@ -1,15 +1,17 @@
 apiVersion: machineconfiguration.openshift.io/v1
 kind: KubeletConfig
 metadata:
-   name: kubelet-config-worker
+  name: kubelet-config-worker
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
 spec:
-    machineConfigPoolSelector:
-        matchLabels:
-            pools.operator.machineconfiguration.openshift.io/worker: ""
-    kubeletConfig:
-      eventRecordQPS: 5
-      tlsCipherSuites:
-      - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-      - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
-      - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-      - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+  machineConfigPoolSelector:
+    matchLabels:
+      pools.operator.machineconfiguration.openshift.io/worker: ""
+  kubeletConfig:
+    eventRecordQPS: 5
+    tlsCipherSuites:
+    - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+    - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+    - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+    - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256

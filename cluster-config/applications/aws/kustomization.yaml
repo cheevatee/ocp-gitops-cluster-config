@@ -6,3 +6,4 @@ resources:
 - container-security-operator.yaml
 - compliance-operator.yaml
 - etcd-encryption.yaml
+- synctime.yaml

@@ -8,3 +8,4 @@ resources:
 - etcd-encryption.yaml
 - synctime.yaml
 - self-provisioners.yaml
+- compliance-remediation.yaml

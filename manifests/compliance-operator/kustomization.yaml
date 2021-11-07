@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
 - co-namespace.yaml
 - co-og.yaml
+- co-sub.yaml

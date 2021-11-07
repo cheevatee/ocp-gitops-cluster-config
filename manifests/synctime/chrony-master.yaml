@@ -4,6 +4,8 @@ metadata:
   labels:
     machineconfiguration.openshift.io/role: master
   name: 50-master-chrony
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   config:
     ignition:

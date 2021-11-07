@@ -7,5 +7,5 @@ resources:
 - eo-sub.yaml
 - olo-og.yaml
 - olo-sub.yaml
-#- gitops-logging-rbac.yaml
+- gitops-logging-rbac.yaml
 - olo-instance.yaml

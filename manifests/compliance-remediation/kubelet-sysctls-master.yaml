@@ -5,6 +5,8 @@ metadata:
   labels:
     machineconfiguration.openshift.io/role: master
   name: 75-master-kubelet-sysctls
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   config:
     ignition:

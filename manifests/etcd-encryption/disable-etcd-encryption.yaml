@@ -11,3 +11,5 @@ metadata:
 spec:
   audit:
     profile: Default
+  encryption:
+    type: identity

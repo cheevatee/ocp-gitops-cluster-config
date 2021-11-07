@@ -5,7 +5,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "3"
     argocd.argoproj.io/hook: PostSync
     argocd.argoproj.io/hook-delete-policy: HookSucceeded
-  name: mcp-worker-wait-job
+  name: kubelet-mcp-worker-wait-job
   namespace: openshift-gitops
 spec:
   template:
@@ -27,7 +27,7 @@ spec:
               done
               echo "DONE"
           imagePullPolicy: Always
-          name: mcp-worker-wait-job
+          name: kubelet-mcp-worker-wait-job
           env:
           - name: SLEEP
             value: "5"

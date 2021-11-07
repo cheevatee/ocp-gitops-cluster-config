@@ -4,5 +4,6 @@ resources:
 - co-namespace.yaml
 - co-og.yaml
 - co-sub.yaml
+- gitops-compliance-rbac.yaml
 - scansetting-cis.yaml
 #- scansettingbinding-cis.yaml

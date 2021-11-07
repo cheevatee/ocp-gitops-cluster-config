@@ -5,5 +5,5 @@ resources:
 - kubelet-config-master.yaml
 - kubelet-config-worker.yaml
 - kubelet-sysctls-master.yaml
-- cli-job-master.yaml
-- cli-job-worker.yaml
+- kubelet-job-master.yaml
+- kubelet-job-worker.yaml

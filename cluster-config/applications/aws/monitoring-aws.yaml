@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ocp-monitoring-aws
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: https://kubernetes.default.svc
+  project: openshift-monitoring
+  source:
+    path: manifests/monitoring-aws
+    repoURL: https://github.com/cheevatee/ocp-gitops-cluster-config
+    targetRevision: master
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

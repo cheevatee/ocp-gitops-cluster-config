@@ -1,5 +1,4 @@
 apiVersion: compliance.openshift.io/v1alpha1
-apiVersion: compliance.openshift.io/v1alpha1
 kind: ScanSettingBinding
 metadata:
   name: cis-compliance

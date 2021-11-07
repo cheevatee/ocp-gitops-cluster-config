@@ -7,3 +7,4 @@ resources:
 - compliance-operator.yaml
 - etcd-encryption.yaml
 - synctime.yaml
+- self-provisioners.yaml

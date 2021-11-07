@@ -10,7 +10,7 @@ spec:
   source:
     path: manifests/logging-aws
     repoURL: https://github.com/cheevatee/ocp-gitops-cluster-config
-    targetRevision: master
+    targetRevision: HEAD
   syncPolicy:
     automated:
       prune: true

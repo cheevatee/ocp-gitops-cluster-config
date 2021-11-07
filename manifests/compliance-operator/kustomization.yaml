@@ -4,3 +4,5 @@ resources:
 - co-namespace.yaml
 - co-og.yaml
 - co-sub.yaml
+- scansetting-cis.yaml
+- scansettingbinding-cis.yaml

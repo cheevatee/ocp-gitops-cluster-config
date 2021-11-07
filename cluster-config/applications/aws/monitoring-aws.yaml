@@ -6,7 +6,7 @@ spec:
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
-#  project: openshift-gitops
+  project: openshift-gitops
   source:
     path: manifests/monitoring-aws
     repoURL: https://github.com/cheevatee/ocp-gitops-cluster-config

@@ -4,5 +4,5 @@ resources:
 - gitops-machineconfig-rbac.yaml
 - chrony-master.yaml
 - chrony-worker.yaml
-- cli-job-master.yaml
-- cli-job-worker.yaml
+- synctime-job-master.yaml
+- synctime-job-worker.yaml

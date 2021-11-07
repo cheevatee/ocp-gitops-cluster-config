@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ocp-logging-aws
+  namespace: openshift-gitops
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  project: cluster-config
+  source:
+    path: manifests/logging-aws
+    repoURL: https://github.com/cheevatee/ocp-gitops-cluster-config
+    targetRevision: master
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

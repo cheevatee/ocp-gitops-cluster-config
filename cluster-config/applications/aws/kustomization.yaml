@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
 - monitoring-aws.yaml
 - logging-aws.yaml
+- container-security-operator.yaml

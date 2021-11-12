@@ -5,7 +5,7 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
-    server: https://api.ocp1.sandbox1472.opentlc.com:6443
+    server: https://api.ocp2.sandbox1472.opentlc.com:6443
   project: cluster-config
   source:
     path: manifests/self-provisioners

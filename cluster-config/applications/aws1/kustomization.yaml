@@ -4,7 +4,7 @@ resources:
 #- monitoring-aws.yaml
 #- logging-aws.yaml
 #- container-security-operator.yaml
-#- compliance-operator.yaml
+- compliance-operator.yaml
 #- etcd-encryption.yaml
 #- synctime.yaml
 - self-provisioners.yaml

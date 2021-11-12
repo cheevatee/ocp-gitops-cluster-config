@@ -4,8 +4,7 @@ metadata:
   name: cis-compliance
   namespace: openshift-compliance
   annotations:
-    argocd.argoproj.io/hook: PostSync
-    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-wave: "3"
 rawResultStorage:
   pvAccessModes:
   - ReadWriteOnce

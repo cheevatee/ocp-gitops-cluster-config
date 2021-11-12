@@ -5,5 +5,5 @@ resources:
 - co-og.yaml
 - co-sub.yaml
 - gitops-compliance-rbac.yaml
-#- scansettingbinding-cis.yaml
+- scansettingbinding-cis.yaml
 #- scansetting-cis.yaml

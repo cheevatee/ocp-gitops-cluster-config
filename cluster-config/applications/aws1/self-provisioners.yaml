@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ocp-self-provisioners
+  name: ocp-self-provisioners-aws1
   namespace: openshift-gitops
 spec:
   destination:

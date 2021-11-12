@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+#- monitoring-aws.yaml
+#- logging-aws.yaml
+#- container-security-operator.yaml
+#- compliance-operator.yaml
+#- etcd-encryption.yaml
+#- synctime.yaml
+- self-provisioners.yaml
+#- compliance-remediation.yaml

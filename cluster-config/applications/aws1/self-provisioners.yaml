@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ocp-self-provisioners
+  namespace: openshift-gitops
+spec:
+  destination:
+    server: https://api.ocp1.sandbox1472.opentlc.com:6443
+  project: cluster-config
+  source:
+    path: manifests/self-provisioners
+    repoURL: https://github.com/cheevatee/ocp-gitops-cluster-config
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
